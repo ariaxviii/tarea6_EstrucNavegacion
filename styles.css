@@ -1,0 +1,175 @@
+/** import google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+*{
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;  
+}
+
+/** contenedor principal*/
+.container{
+  display: grid;
+  grid-template-areas: 
+  "header header header header"            
+  "nav main main main" 
+  "nav main main main"  
+  "nav main main main";  
+  gap: 5px;
+  margin: auto;
+  grid-template-columns: repeat(4, 1fr); 
+  grid-template-rows: repeat(5, auto); 
+}
+
+header nav{
+  grid-area: header; 
+  display: flex;
+  justify-items: center;
+  background-color: #d6b087; /*provisional, EDITAR*/   
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  margin: 5px;  
+}
+
+.header{
+  grid-area: header;  
+  display: flex;
+  flex-direction: column;
+  height: max-content;   
+  /**background-color: #6309ff; EDITAR para diferenciar el grid*/
+  align-items: center;   
+}
+
+div .form-inline{  
+  grid-area: header; 
+  display: flex;  
+  align-items: center;     
+}
+
+.iconos_header i{
+  grid-area: header; 
+  color: #F0F0EF;  
+}
+
+.iconos_header a{
+  grid-area: header; 
+  font-size: xx-small;  
+}
+
+body{
+  background: #F0F0EF;  
+  height: 100vh;
+}
+
+.main{
+  grid-area: main;  
+  display: flex;
+  flex-direction: column;    
+  justify-content: flex-start;   
+  /**background-color: #6309ff; EDITAR para diferenciar el grid*/
+  padding: 20px;
+  height: 500vh; /*Regula la altura del color del background*/
+}
+
+.card{
+  justify-items: center;
+}
+
+.card-img-top{  
+  justify-content: space-evenly;
+  width: 50%;
+  padding: 5px; /*cards, dimensión EDITABLE*/
+  cursor: pointer;
+}
+
+/*----------ccentrado Cards logos de marcas----------*/
+.card-group>.card {
+align-items: center 
+}
+
+/*centrado Cards logos de marcas*/
+.carousel-inner{
+  display: flex;
+  justify-content: space-around;  
+}
+
+/*----------carrusel, dimensión EDITABLE----------*/
+.carousel-item {
+  width: 80%;    
+}
+
+/*----------carrusel, posición "X" EDITABLE----------*/
+.w-100{
+  width: 50%!important;
+}
+
+.section2{  
+  grid-area: main;
+  background-color: #d6b087;
+}
+
+.navbar{
+display: flex;
+align-content: flex-start;
+background: #d6b087; 
+height: 500vh;
+}
+
+.navbar__logo{ 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+/**logo en la barra e Navegacion*/
+.navbar__logo img{
+  margin: 0rem 0 1rem 0;
+  box-sizing: border-box;
+  height: 90px;
+  align-items: center; 
+}
+
+/**Lista desordenada*/
+ul{
+  margin: 0 auto;  
+  list-style: none;  
+  padding-left: 0;
+}
+
+.navbar__menu li{
+  padding: 10px;    
+  border-radius: 15px;
+  box-sizing: content-box;
+}
+
+.navbar__menu li:hover{
+  background-color: white;
+  border-radius: 20px;
+  text-decoration: underline #6309ff;  
+  box-shadow: inset 5px 5px 10px rgba(166, 180, 200, 0.7),
+  inset -5px -5px 15px rgba(255, 255, 255, 0.8);
+}
+
+a{
+  text-decoration: none;
+  color: #F0F0EF;
+}
+
+/** 
+Diseño Móvil
+@media (max-width: 576px){
+
+}
+*/
+
+  
+
+
+
